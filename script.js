@@ -13,12 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var icon = document.querySelector(".icon");
   if (icon) {
     icon.addEventListener("click", toggleResponsive);
-  }
 
-  // Check if the page was refreshed
-  if (performance.navigation.type === 1) {
-    // Page was refreshed, set the initial class to "topnav"
-    var x = document.getElementById("myTopnav");
-    x.className = "topnav";
+    // Trigger the initial click to open the responsive navigation
+    icon.click();
   }
 });
+
